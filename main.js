@@ -19,7 +19,7 @@ function modelLoaded(){
     console.log('PoseNet Is Initialized.')
 }
 
-function gotPoses(result){
+function gotPoses(results){
     if(results.length > 0){
         console.log(results);
     }
