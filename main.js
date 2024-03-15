@@ -16,5 +16,5 @@ function draw(){
 
 function play(){
     song.play();
-    song.setVolume(0.5);
+    song.setVolume(0.7);
 }
