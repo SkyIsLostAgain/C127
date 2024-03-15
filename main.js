@@ -12,7 +12,7 @@ function setup(){
     video.hide();
 
     poseNet = ml5.poseNet(video, modelLoaded);
-    poseNte.on('pose', gotPoses);
+    poseNet.on('pose', gotPoses);
 }
 
 function modelLoaded(){
@@ -20,7 +20,7 @@ function modelLoaded(){
 }
 
 function gotPoses(result){
-    if(result.length > 0){
+    if(results.length > 0){
         console.log(results);
     }
 }
