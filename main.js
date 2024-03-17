@@ -44,6 +44,10 @@ function draw(){
     fill("red");
     stroke("red");
     circle(leftWristX, leftWristY, 20);
+    InNumberleftwristy = Number(leftWristY);
+    removedecimals = floor(InNumberleftwristy);
+    volume = removedecimals/500;
+    document.getElementById("volume").innerHTML = "Volume = " + volume;
 
 
 }
