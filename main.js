@@ -1,4 +1,5 @@
 song = "";
+
 leftWristX = 0;
 leftWristY = 0;
 
@@ -10,7 +11,7 @@ function preload(){
 }
 
 function setup(){
-    canvas = createCanvas(300,300);
+    canvas = createCanvas(600,500);
     canvas.center();
 
     video = createCapture(VIDEO);
@@ -38,7 +39,13 @@ function gotPoses(results){
 }
 
 function draw(){
-    image(video, 0, 0, 300, 300)
+    image(video, 0, 0, 600, 500)
+
+    fill("red");
+    stroke("red");
+    circle(leftWristX, leftWristY, 20);
+
+
 }
 
 function play(){
